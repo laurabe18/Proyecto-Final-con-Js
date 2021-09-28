@@ -118,13 +118,6 @@ img
 {
     width: 150px;
     height: 200px;
-    
-}
-
-img:hover
-{
-padding: 20px;
-transform: skewY(25deg);
 }
 
 h3
