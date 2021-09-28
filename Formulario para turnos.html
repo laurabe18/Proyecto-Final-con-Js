@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./formateo/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Formulario</title>
+</head>
+
+ <body>
+     <div class="conteiner">
+        <header class="header">
+           <h4 class="header__titulo2"> Formulario para turnos</h4>
+       
+          <nav class="navbar">  
+             <ul>
+               <li>
+                 <a class="enlace" href="index.html"> Inicio </a></li>
+               <li>
+                 <a class="enlace" href="Trabajos.html"> Trabajos </a></li>
+               <li>
+                 <a class="enlace" href="Contacto.html"> Contacto </a></li>
+             </ul>
+          </nav> 
+       </header>
+
+        <main class="content">
+           <section >
+             <form action="lauriitaromero_18@hotmail.com">
+                  <div>
+                     <label for="nombre">
+                         <span>¿Como te llamas?</span>
+                         <input type="text" id="nombre" placeholder="introduce tu nombre">
+                     </label>
+                  </div>
+                  <div>
+                     <label for="dia">
+                          <span>¿Que dia?</span>
+                          <input type="date" name="dia" id="dia">
+                     </label>
+                  </div>
+         
+                  <div>
+                      <label for="horario">
+                          <span>¿En que horario?</span>
+                          <input type="time" name="horario" id="horario">
+                      </label>
+                  </div>
+                     
+                  <div>
+                     <label for="telefono">
+                          <span>¿Nos dejas tu telefono por cualquier inconveniente?</span>
+                          <input type="text" id="telefono" placeholder="Escribe tu numero">
+                     </label>
+                  </div>
+
+                  <div class="enviar">   
+                     <div >
+                        <button class="enviar__px" type="submit">Enviar</button>
+                     </div>
+                     <div>
+                        <input type="reset" value="Reset">
+                     </div>
+                  </div> 
+             </form>
+           </section>
+        </main>
+    
+        <footer class= "footer">
+             Buscanos y seguinos en nuestras redes
+        </footer>
+     </div> 
+  </body>
+</html>
