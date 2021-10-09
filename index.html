@@ -8,82 +8,106 @@
     <title>May Podesta Nails</title>
 
     <link rel="stylesheet" href="./formateo/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 
 <body>
- <div class="conteiner">
-      <header class="header">
-            <img class="header__logo" src="./imagenes de uñas/fondo logo2.jpg" alt=""> 
-            <h1 class="header__titulo"> May Podesta </h1>
-            <h2 class="header__titulo2"> Nails Art </h2>
-        
-            <nav class="navbar">  
-                <ul>
-                  <li>
-                   <a class="enlace" href="index.html"> Inicio </a></li>
-                  <li>
-                    <a class="enlace" href="Trabajos.html"> Trabajos </a></li>
-                  <li>
-                   <a class="enlace" href="Contacto.html"> Contacto </a></li>
-                </ul>
-            </nav>    
-      </header>
-
-      <main class="content">
-           <section>
-              <iframe  src="https://www.youtube.com/embed/UBCWJGmzI9U" title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-          </section>
+  <header class="container">
+    <div class="row mt-5 justify-content-beetween">
+      <section class="col-xs-12 col-md-12 p-4">
+        <h1 class="text-center header__titulo"> May Podesta </h1>
+        <h2 class="text-center header__titulo2"> Nails Art </h2>
      
-          <article class="article">
-            <p> Te propongo un servcio profesional de manicuria, uñas esculpidas en acrilico o gel, 
-              esmaltado semi permanente y nail art.
-              Utilizando los mejores productos, porque vos te mereces el mejor cuidado.
-              Para tu tranquilidad y comodidad me manejo solo con turno. 
-             </p>
-          </article>
+        <nav>  
+          <ul class="nav justify-content-between row text-center">
+            <li class="nav-item col-xs-12 col-md-3">
+              <a class="nav-link" href="index.html"> Inicio </a></li>
+            <li class="nav-item col-xs-12 col-md-3">
+              <a class="nav-link" href="Trabajos.html"> Trabajos </a></li>
+            <li class="nav-item col-xs-12 col-md-3">
+              <a class="nav-link" href="Contacto.html"> Contacto </a></li>
+          </ul>
+        </nav>  
+     </section>  
+    </div>
+  </header>
 
-          <div class="boton__border">
-             <button class="boton__border__color">
-                  <a href="Formulario para turnos.html">Ver Turnos Disponibles</a>
-              </button> 
-          </div>
-      </main>
-
-      <aside class="asidebar">
-          <div>
-              <img  src="./imagenes de uñas/beauty.jpg" alt="">
-              <p> 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-          </div>
-           <div>
-              <img  src="./imagenes de uñas/featured.jpg" alt="">
-              <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-             </p>
-         </div>
-     </aside>
-       <h3>Ultimas Tendencias</h3>
-     <section class="section"> 
-        <div class="img">
-          <img  src="imagenes de uñas/elle manicuria.png" alt="elle manicuria.png" >
-          </div>
-          <div>
-          <img class="img" src="imagenes de uñas/pint.jpg" alt="pint.jpg" >
-          </div>
-          <div>
-          <img class="img" src="imagenes de uñas/unnamed.jpg" alt="unnamed" >
+  <main class="container">
+    <div class="row mt-5 justify-content-beetween">
+      <section class="col-xs-12 col-md-8 p-4">
+        <div class="ratio ratio-16x9">
+          <iframe  src="https://www.youtube.com/embed/UBCWJGmzI9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
         </div>
-     </section>
-      
-     <footer class="footer">
+
+        <article class="article">
+          <p> Te propongo un servcio profesional de manicuria, uñas esculpidas en acrilico o gel, esmaltados semi permanente y nail art.Utilizando los mejores productos, porque vos te mereces el mejor cuidado. Para tu tranquilidad y comodidad me manejo solo con turno. 
+          </p>
+        </article>
+
+        <div class="boton__border">
+          <button class="boton__border__color py-2 px-3">
+            <a href="Formulario para turnos.html">Ver Turnos Disponibles</a>
+          </button> 
+        </div>
+      </section>
+  
+      <aside class="asidebar col-xs-12 col-md-3">
+        <div class="container">
+          <div>
+            <img class="img-fluid" src="./imagenes de uñas/beauty.jpg" alt="">
+          </div>
+          <p> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="container">
+          <div>
+            <img class="img-fluid" src="./imagenes de uñas/featured.jpg" alt="">
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </aside>
+    </div>
+  
+    <section class="row mt-5 justify-content-beetween"> 
+      <h3 class="text-center">Ultimas Tendencias</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes de uñas/elle manicuria.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes de uñas/featured.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes de uñas/unnamed.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  
+    <footer class="container footer ">
+      <div class="justify-content-between row text-center">
+        <div class="col-xs-12 col-md-12 p-4">
           Buscanos y siguenos en nuestras redes 
-     </footer>
+        </div>
+      </div>
+    </footer>
   </div>
+  <script src="./js/bootstrap.js"></script>
 </body>
 </html>
