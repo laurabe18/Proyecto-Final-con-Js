@@ -1,267 +1,134 @@
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* CABECERA */
+body {
+  background-color: lavender;
+  font-family: "Carattere", cursive; }
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+header.container {
+  background-color: white; }
 
-/*INICIO DEL INDEX*/
-body
-{
-    background-color: lavender;
-    font-family: 'Carattere', cursive;
-}
+.header__titulo {
+  color: darkorchid;
+  font-size: 4.6em; }
 
-header.container
-{
-    background-color: white;
-}
+.header__titulo2 {
+  color: blueviolet;
+  background-color: violet; }
 
-.header__titulo
-{
-color: darkorchid;
-font-size: 4.6em;
-}
+.nav ul {
+  list-style: none;
+  display: flex; }
 
-.header__titulo2
-{
-    color: blueviolet;
-    background-color: violet;
-}
+.nav-item {
+  display: inline-block;
+  width: 30%;
+  position: relative; }
 
-.nav ul
-{
-list-style: none;
-display: flex;
-}
+.nav-link {
+  font-size: 30px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid palevioletred;
+  padding: 0.3rem;
+  background-image: linear-gradient(to left, violet, darkorchid); }
 
-.nav-item
-{
-display: inline-block;
-width: 30%;
-position: relative;
-}
+.nav-link:hover {
+  color: #ecbfd2; }
 
-.nav-link
-{
-    font-size: 30px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    border: 1px solid palevioletred;
-    padding: 0.3rem;
-    background-image: linear-gradient(to left, violet,darkorchid);
-}
+main.container {
+  background: lavenderblush;
+  padding: 20px; }
 
-.nav-link:hover
-{
-    color: rgb(236, 191, 210);
-}
+section {
+  border: 1px solid #700470; }
 
-main.container
-{
-    background: lavenderblush;
-    padding: 20px;
-}
+.article {
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 5px;
+  color: darkorchid; }
 
-section
-{
-    border: 1px solid #700470; 
-}
+p {
+  font-size: 25px;
+  text-align: justify;
+  margin: 20px; }
 
-.article
-{
-font-size: 30px;
-padding: 20px;
-margin-top: 5px;
-color: darkorchid;
-}
+.asidebar {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to left, violet, darkorchid); }
 
-.boton__border
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.footer {
+  border: 3px solid palevioletred;
+  font-size: 30px;
+  color: white;
+  background-image: linear-gradient(darkorchid, violet); }
 
-.boton__border__color
-{
-    border-color: blueviolet;
-    background-color: white;
-    font-size: 20px;
-    border-width: 5px; 
-}
+h3 {
+  color: darkorchid;
+  font-size: 30px;
+  text-decoration: underline; }
 
-.boton__border__color a
-{
-    text-decoration: none;
-    color: darkorchid;
-}
+h4 {
+  color: blueviolet;
+  font-size: 30px; }
 
-.boton__border__color :hover
-{
-    background-color: violet;
-}
+.titulo__trabajo {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  /*ANIMACION*/
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 0s; }
 
-.asidebar
-{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: linear-gradient(to left, violet,darkorchid);
-}
-
-p
-{
-font-size: 25px;
-text-align: justify;
-margin: 20px;
-}
-
-.footer
-{
-    border: 3px solid palevioletred;
-    font-size: 30px;
-    color: white;
-    background-image: linear-gradient(darkorchid, violet);
-}
-/*FIN DEL INDEX*/
-.section
-{
-    display: flex;
-    flex-direction: row;
-}
-
-img
-{
-    width: 200px;
-    height: 200px;
-}
-
-h3
-{
-    color:darkorchid;
-    font-size: 30px;
-    text-decoration: underline;
-}
-
-
-
-.header__logo
-{
-    background-image: url(./imagenes\ de\ uñas/fondologo2.jpg);
-    width: 100%;
-    max-width: 1000px;
-    height: 60%;
-    max-height: 200px;
-    margin: 0;
-    
-}
-
-h4
-{
-    color: blueviolet;
-    font-size: 30px;
-}
-
-
-
-/* INICIO PAG DE TRABAJOS (las imagenes son a modo ilustrativo, hay que cambiarlas por los trabajos reales) */ 
-.div 
-{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap ;
-    width: 90%;
-}
-
-.titulo__trabajo
-{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px; 
-    /*ANIMACION*/
-    animation-name: un_efecto;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-delay: 0s;
-}
-
-@keyframes un_efecto
-{
-    0%{ width: 200px; }
-    10%{ width: 500px; }
-    25%{ width: 300px; }
-    50%{width: 500px; 
+@keyframes un_efecto {
+  0% {
+    width: 200px; }
+  10% {
+    width: 500px; }
+  25% {
+    width: 300px; }
+  50% {
+    width: 500px;
     background-color: violet; }
-    75%{width: 300px; }
-    90%{width: 200px;
-    background-color: darkorchid }
-}
-
-.imagen__uña
-{
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-}
-
-/*FIN DE PAG DE TRABAJOS*/
-
-/*TRABAJO DE TABLAS*/
-table
-    {margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;}
-
-    th{background-color: rgb(214, 192, 235);
-    color: rgb(194, 18, 141);
-    align-self: center;}
-
-    th,td
-    {border: 2px solid #850685;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-ol{
-    list-style-type: none;
-}
-/*FIN DE TABLAS*/
-
-/*FORMULARIO*/
-
-input
-{
-    margin: 20px;
-    width: 100px;
-    height: 30px;
-    transition: all 2s;
-}
-
-input:focus
-{
+  75% {
+    width: 300px; }
+  90% {
     width: 200px;
-    font-size: 24px;
-}
+    background-color: darkorchid; } }
 
-.enviar
-{
-    display: flex;
-    justify-content: space-around;
-    
-}
+.boton__border {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.enviar__px
-{
-    margin: 20px;
-    width: 100px;
-    height: 30px;
-}
-/*FIN DE ORMULARIO*/
+.boton__border__color {
+  border-color: blueviolet;
+  background-color: white;
+  font-size: 20px;
+  border-width: 5px; }
+
+.boton__border__color a {
+  text-decoration: none;
+  color: darkorchid; }
+
+.boton__border__color :hover {
+  background-color: violet; }
+
+.box {
+  width: 22.5%;
+  padding: 5px; }
+
+/*operacion matematica*/

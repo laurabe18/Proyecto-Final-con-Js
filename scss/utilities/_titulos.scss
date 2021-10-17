@@ -1,0 +1,37 @@
+h3
+ {
+     color:$color-titulo;
+     font-size: $tamano-letra;
+     text-decoration: underline;
+ }
+ 
+ h4
+ {
+     color:$color-t2;
+     font-size: $tamano-letra;
+ }
+ .titulo__trabajo
+ {
+     color: $color-white;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 30px; 
+     /*ANIMACION*/
+     animation-name: un_efecto;
+     animation-iteration-count: infinite;
+     animation-duration: 5s;
+     animation-delay: 0s;
+ }
+ 
+ @keyframes un_efecto
+ {
+     0%{ width: 200px; }
+     10%{ width: 500px; }
+     25%{ width: 300px; }
+     50%{width: 500px; 
+     background-color: $color-fondo-t2; }
+     75%{width: 300px; }
+     90%{width: 200px;
+     background-color: $color-titulo }
+ }

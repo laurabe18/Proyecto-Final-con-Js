@@ -7,53 +7,70 @@
     <title>Contacto</title>
 
     <link rel="stylesheet" href="./formateo/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-
-    <div class="conteiner">
-        <header class="header">
-           <img class="header__logo" src="./imagenes de uñas/featured.jpg" alt="">
-        
-           <h3>Contacto</h3>
-
-          <nav class="navbar">  
-              <ul>
-                 <li>
-                  <a class="enlace" href="index.html"> Inicio </a></li>
-                 <li>
-                  <a class="enlace" href="Trabajos.html"> Trabajos </a></li>
-                 <li>
-                 <a class="enlace" href="Contacto.html"> Contacto </a></li>
-              </ul>
-          </nav>    
-        </header>
+  <header class="container">
+    <div class="row">
+      <img src="./imagenes de uñas/featured.jpg" class="img-fluid" style="width: 100%; height: 200px;" alt="">
+    </div>
+    <div>
+      <h3 class="text-center">Contacto</h3>
+    </div>
+    <nav>  
+      <ul class="nav justify-content-between row text-center">
+        <li class="nav-item col-xs-12 col-md-3">
+          <a class="nav-link" href="index.html"> Inicio </a></li>
+        <li class="nav-item col-xs-12 col-md-3">
+          <a class="nav-link" href="Trabajos.html"> Trabajos </a></li>
+        <li class="nav-item col-xs-12 col-md-3">
+          <a class="nav-link" href="Contacto.html"> Contacto </a></li>
+      </ul>
+    </nav>  
+  </header>
     
-        <main class="content">
-            <h3>
-                 Visitanos!!!
-            </h3>
-            <section>
-               <p>
-                  Pellegrini 630, General Rodriguez, Buenos Aires.
-                  A una cuadra y media de la estacion de tren (General rodriguez)
-               </p>
-               <p>
-                  WhatsApp (011) 1521715813
-               </p>
-            </section>
-            <section>
-               <p>
-                   Mapa de ubicacion
-               </p>   
-            </section> 
-        </main>
+    <main class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <h3 class="text-center mt-2">
+            Visitanos!!!
+          </h3>
+        </div>
+      </div>
+      <section class="container mt-2">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <p>
+              Pellegrini 630, General Rodriguez, Buenos Aires. A una cuadra y media de la estacion de tren (General rodriguez)
+            </p>
+            <p>
+              WhatsApp (011) 1521715813
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-2">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <p>
+              Mapa de ubicacion
+            </p>  
+          </div>
+        </div> 
+      </section> 
+    </main>
     
-        <footer class="footer">
-            Buscanos y siguenos en nuestras redes 
-        </footer>
-    </div> 
+    <footer class="container footer">
+        <div class="justify-content row text-center">
+           <div class="col-xs-12 col-md-12">
+             Buscanos y siguenos en nuestras redes 
+           </div>
+        </div>
+     </footer>
+   
+     <script src="./js/bootstrap.js"></script>
 </body>
 </html>
