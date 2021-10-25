@@ -1,0 +1,42 @@
+header.container
+ {
+     background-color:  $color-white;
+ }
+ 
+ .header__titulo
+ {
+ color:$color-titulo ;
+ font-size: 4.6em;
+ }
+ 
+ .header__titulo2
+ {
+     color:$color-t2 ;
+     background-color:$color-fondo-t2 ;
+ }
+
+ .navbar-light{
+     .navbar-nav{
+         .nav-link.active{
+             background-color: violet;
+             
+         }
+         .nav-link{
+             font-size: 25px;
+             color: violet;
+             padding: 10px;
+             &:hover{
+                 background-color: darkorchid;
+                 color: white;
+             }
+         }
+     }
+ }
+ .navbar-light {
+     .navbar-toggler{
+         border-color: darkorchid;
+         .menuHamburguesa{
+             color: violet;
+         }
+     }
+ }

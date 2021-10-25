@@ -1,0 +1,29 @@
+main.container
+ {
+     background: $color-fondo-main;
+     padding: $padd-20;
+ }
+
+ section
+ {
+     border: 1px solid #700470; 
+ }
+ 
+ .article
+ {
+ font-size: $tamano-letra;
+ padding: $padd-20;
+ margin-top: 5px;
+ color: $color-titulo;
+ }
+ p
+ {
+ font-size: 25px;
+ text-align: justify;
+ margin: 20px;
+ }
+
+ h1{
+     color:$color-t2;
+ }
+ 
