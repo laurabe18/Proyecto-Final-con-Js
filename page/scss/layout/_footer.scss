@@ -1,8 +1,20 @@
-.footer 
- {
-    border: 3px solid palevioletred;
-    font-size: $tamano-letra;
-    color: $color-white;
-    background-image: linear-gradient($color-titulo,$color-fondo-t2); 
+.footer {
+    background-image: linear-gradient($color-white, $color-fondo-t2); 
+ }
+ 
+ .icono{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
  }
 
+ .p__footer{
+    font-size: 15px;
+    font-family:$fuente__principal--tipo;
+    color:$color-titulo;
+    font-weight: bolder;
+ }
+ .copy{
+    font-size: 12px;
+    font-family:$fuente__principal--tipo;
+ }

@@ -1,0 +1,24 @@
+input
+{
+  margin: $padd-20;
+  width: 150px;
+  height: 30px;
+  transition: all 2s;
+}
+input:focus
+{
+  width: 200px;
+  font-size: $padd-20;
+}
+
+span{
+  font-size: 24px;
+}
+
+.form{
+  font-family:$fuente__secundaria--tipo ;
+}
+
+.btn{
+  font-size: 10px;
+}

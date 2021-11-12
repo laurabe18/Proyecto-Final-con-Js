@@ -1,4 +1,5 @@
 /*VARIABLES*/
+/*COLORES DE BODY*/
 * {
   margin: 0;
   padding: 0;
@@ -6,33 +7,50 @@
 }
 
 body {
-  background-color: lavender;
-  font-family: "Carattere", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
+  height: 100vh;
+  background: linear-gradient(90deg, lavenderblush 0.25em, transparent 0), linear-gradient(90deg, violet 50%, transparent 0), linear-gradient(90deg, darkorchid 50%, darkorchid 0);
+  background-size: 2.25em, 4.5em, 9em;
 }
 
-header.container {
-  background-color: white;
+.container-fluid {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.titulo {
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .header__titulo {
-  color: darkorchid;
-  font-size: 4.6em;
+  color: black;
+  font-size: 5.6em;
+  font-family: "Carattere", cursive;
 }
 
 .header__titulo2 {
-  color: blueviolet;
+  color: black;
   background-color: violet;
+  font-family: "Carattere", cursive;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  background-color: violet;
+  background-color: darkorchid;
+  color: white;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 25px;
-  color: violet;
+  font-size: 15px;
+  color: black;
   padding: 10px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
+  background-color: darkorchid;
+  color: white;
+}
+
+.nav-link.active:hover {
   background-color: darkorchid;
   color: white;
 }
@@ -44,60 +62,133 @@ header.container {
   color: violet;
 }
 
-main.container {
-  background: lavenderblush;
-  padding: 20px;
+.container {
+  background: white;
 }
 
-section {
-  border: 1px solid #700470;
-}
-
-.article {
+.p__article {
   font-size: 30px;
   padding: 20px;
   margin-top: 5px;
-  color: darkorchid;
+  color: blueviolet;
 }
 
 p {
-  font-size: 25px;
+  font-family: "Carattere", cursive;
+  font-size: 40px;
   text-align: justify;
   margin: 20px;
 }
 
+.p__contacto {
+  font-family: "Carattere", cursive;
+  font-size: 30px;
+  color: blueviolet;
+  margin: 0px 0px;
+}
+
 h1 {
   color: blueviolet;
+  font-family: "Carattere", cursive;
+}
+
+.h1 {
+  color: blueviolet;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#container-lg {
+  width: 100%;
+}
+
+.galeria {
+  padding: 80px 0;
+}
+.galeria img {
+  background-image: linear-gradient(to left, white, darkorchid);
+  padding: 15px;
+  max-width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#galeria-modal .modal-img {
+  width: 100%;
+}
+
+.card {
+  background-image: linear-gradient(to left, black, darkorchid);
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards-text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.contenedor-fluid .card {
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0, 25s;
+}
+.contenedor-fluid .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
 }
 
 .asidebar {
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to left, violet, darkorchid);
+  background-color: white;
+  font-family: "Carattere", cursive;
+}
+
+.container__img {
+  background-image: linear-gradient(to right, white, violet);
+}
+
+.p__aside {
+  font-size: 25px;
 }
 
 .footer {
-  border: 3px solid palevioletred;
-  font-size: 30px;
-  color: white;
-  background-image: linear-gradient(darkorchid, violet);
+  background-image: linear-gradient(white, violet);
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.p__footer {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.copy {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
-  color: darkorchid;
-  font-size: 30px;
-  text-decoration: underline;
-}
-
-h4 {
-  color: blueviolet;
-  font-size: 30px;
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
 }
 
 .titulo__trabajo {
+  font-family: "Carattere", cursive;
   color: white;
   display: flex;
   flex-direction: row;
@@ -112,26 +203,33 @@ h4 {
 
 @keyframes un_efecto {
   0% {
-    width: 200px;
+    width: 40%;
   }
   10% {
-    width: 500px;
+    width: 100%;
   }
-  25% {
-    width: 300px;
+  15% {
+    width: 70%;
   }
-  50% {
-    width: 500px;
+  30% {
+    width: 100%;
     background-color: violet;
   }
-  75% {
-    width: 300px;
+  55% {
+    width: 70%;
   }
-  90% {
-    width: 200px;
-    background-color: darkorchid;
+  60% {
+    width: 40%;
+    background-color: black;
   }
 }
+.promo {
+  font-size: 60px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to left, violet, black);
+  color: white;
+}
+
 .boton__border {
   display: flex;
   justify-content: center;
@@ -140,24 +238,73 @@ h4 {
 
 .boton__border__color {
   border-color: blueviolet;
-  background-color: white;
-  font-size: 20px;
+  background-image: linear-gradient(to top, white, violet);
+  font-size: 15px;
   border-width: 5px;
+  font-weight: bolder;
 }
 
 .boton__border__color a {
   text-decoration: none;
-  color: darkorchid;
+  color: black;
 }
 
 .boton__border__color :hover {
   background-color: violet;
 }
 
-/*operacion matematica*/
-.box {
-  width: 22.5%;
-  padding: 5px;
+.btn-wsp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 2px;
+  right: 100px;
+  background: green;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: green;
+  background-color: white;
+}
+
+.btn-map {
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: red;
+  font-size: 30px;
+  text-align: end;
+}
+
+input {
+  margin: 20px;
+  width: 150px;
+  height: 30px;
+  transition: all 2s;
+}
+
+input:focus {
+  width: 200px;
+  font-size: 20px;
+}
+
+span {
+  font-size: 24px;
+}
+
+.form {
+  font-family: "Carattere", cursive;
+}
+
+.btn {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

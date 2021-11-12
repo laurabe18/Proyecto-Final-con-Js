@@ -8,9 +8,10 @@
  .boton__border__color
  {
      border-color: $color-t2;
-     background-color: $color-white;
-     font-size: 20px;
+     background-image: linear-gradient(to top, $color-white, $color-fondo-t2);
+     font-size: 15px;
      border-width: 5px; 
+     font-weight: bolder;
  }
  
  .boton__border__color a
@@ -22,4 +23,34 @@
  .boton__border__color :hover
  {
      background-color:$color-fondo-t2;
+ }
+
+ .btn-wsp{
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     bottom: 2px;
+     right: 100px;
+     background: green;
+     color: $color-white;
+     border-radius: 50px;
+     text-align: center;
+     font-size: $tamano-letra;
+     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+     z-index: 100;
+     &:hover{
+         text-decoration: none;
+         color: green;
+         background-color:$color-white;
+     }
+ }
+ 
+ .btn-map{
+     width: 50px;
+     height: 50px;
+     background:$color-white;
+     color: red;
+     font-size: $tamano-letra;
+     text-align: end;
  }

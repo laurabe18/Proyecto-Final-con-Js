@@ -1,5 +1,18 @@
-body
- {
-     background-color: $fondo-body;
-     font-family: $fuente__principal--tipo;
- }
+body {
+    font-family: $fuente__principal--tipo;
+	font-family: sans-serif;
+
+    height: 100vh;
+	background: 
+		linear-gradient(90deg, 
+			lavenderblush $strip, transparent 0), 
+		linear-gradient(90deg, 
+		$color-fondo-t2 50%, transparent 0), 
+		linear-gradient(90deg, 
+		$color-darkorchid 50%, $color-darkorchid 0);
+	background-size: 
+		.25*$size, .5*$size, $size;
+}
+
+   
+

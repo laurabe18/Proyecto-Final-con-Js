@@ -1,9 +1,18 @@
 .asidebar
  {
-     color: $color-white;
+     color: $color-titulo;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     background-image: linear-gradient(to left,$color-fondo-t2, $color-titulo);
+     background-color: $color-white;
+     font-family: $fuente__secundaria--tipo;
+ }
+
+ .container__img{
+     background-image: linear-gradient(to right, $color-white, $color-fondo-t2);
+ }
+
+ .p__aside{
+     font-size: 25px;
  }
