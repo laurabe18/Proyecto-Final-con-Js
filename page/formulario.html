@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
 
-    <link rel="stylesheet" href="./formateo/normalize.css">
-    <!--bootstrap-->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./formateo/normalize.css">
+   <!--bootstrap-->
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js"></script>
+   <!--javaScript-->
+   <script defer src="./js/main.js"></script>
+   <script defer src="./js/sessionFunction.js"></script> 
+   <!-- <script defer src="./js/manpulacionDom.js"></script> -->
+   <script defer src="./js/clases.js"></script>
 
-    <title>MayPodesta - Formulario</title>
+   <title>MayPodesta - Formulario</title>
 </head>
 
-<body>
+<body onload="inicio()">
    <header class="container mt-5">
       <nav class="navbar navbar-expand-md navbar-light text-uppercase fw-bolder"> 
         <a class="navbar-brand" href="../index.html">
@@ -45,46 +52,27 @@
       </nav> 
    </header>
 
-        <main class="container mt-2">
-           <div class="row justify-content-center">
-           <section class="col-xs-12 col-md-12">
-             <form enctype="text/plain" action="correo.php" method="post">
-                  <div class="form text-center p-2">
-                     <label for="nombre">
-                         <span>¿Como te llamas?</span>
-                         <input type="text" name="nombre" id="nombre" placeholder="introduce tu nombre" required>
-                     </label>
-                  </div>
-                  <div class="form text-center p-2">
-                     <label for="dia">
-                          <span>¿Que dia?</span>
-                          <input type="date" name="dia" id="dia" required>
-                     </label>
-                  </div>
-         
-                  <div class="form text-center p-2">
-                      <label for="horario">
-                          <span>¿En que horario?</span>
-                          <input type="time" name="horario" id="horario" required>
-                      </label>
-                  </div>
-                     
-                  <div class="form text-center p-2">
-                     <label for="telefono">
-                          <span>¿Nos dejas tu telefono por cualquier inconveniente?</span>
-                          <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero" required>
-                     </label>
-                  </div>
-
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                     <input class="btn btn-light text-center text-uppercase fw-bolder" type="submit" value="Enviar">
-                     <input class="btn btn-light text-uppercase fw-bolder" type="reset" value="Limpiar">
-                  </div> 
-               </div> 
-             </form>
-           </section>
-        </main>
+   <main class="container mt-2">
+      <div class="row justify-content-center">
+         <section class="col-xs-12 col-md-12">
+           <form action="" onsubmit="register(event)" class="formulario">
+               <input type="text" class="formulario__input" name="nombre" id="nombre" >
+               <label for="" class="formulario__label"> Nombre </label>
+               <input type="text" class="formulario__input" name="nombre" id="nombre" >
+               <label for="" class="formulario__label"> Apellido </label>
+               <input type="date" class="formulario__input" name="dia" id="dia">
+               <label for="" class="formulario__label"></label>
+               <input type="time" class="formulario__input" name="horario" id="horario" >
+               <label for="" class="formulario__label"></label>
+               <input type="text" class="formulario__input" name="telefono" id="telefono">
+               <label for="" class="formulario__label">Telefono </label>
+               <input type="submit" class="formulario__submit" value="Enviar" id="enviar">
+           </form> 
+         </section> 
+      </div> 
+   </main>
     
+
    <footer class="container footer mt-2">
       <p class="p__footer text-center m-1">Te invito a seguir mis redes</p> 
       <div class="text-center">
@@ -97,9 +85,6 @@
    </footer>
 
    <script src="./js/bootstrap.js"></script>
-   
-   
-      
    
 </body>
 </html>

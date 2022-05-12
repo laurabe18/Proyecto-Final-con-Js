@@ -36,6 +36,8 @@ body {
   font-family: "Carattere", cursive;
 }
 
+/*MENU*/
+
 .navbar-light .navbar-nav .nav-link.active {
   background-color: darkorchid;
   color: white;
@@ -99,6 +101,8 @@ h1 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
+/*VENTANA MODAL*/
+
 #container-lg {
   width: 100%;
 }
@@ -118,6 +122,7 @@ h1 {
   width: 100%;
 }
 
+/*ULTIMAS TENDENCIAS*/
 .card {
   background-image: linear-gradient(to left, black, darkorchid);
   color: white;
@@ -141,6 +146,7 @@ h1 {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
 }
 
+/*ASIDE*/
 .asidebar {
   color: black;
   display: flex;
@@ -158,6 +164,8 @@ h1 {
 .p__aside {
   font-size: 25px;
 }
+
+/*FOOTER*/
 
 .footer {
   background-image: linear-gradient(white, violet);
@@ -186,6 +194,8 @@ h3 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
+
+/*TRABAJO*/
 
 .titulo__trabajo {
   font-family: "Carattere", cursive;
@@ -223,6 +233,7 @@ h3 {
     background-color: black;
   }
 }
+/*PROMOCIONES*/
 .promo {
   font-size: 60px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -252,6 +263,8 @@ h3 {
 .boton__border__color :hover {
   background-color: violet;
 }
+
+/*BOTON WHATSAAP*/
 
 .btn-wsp {
   position: fixed;
@@ -283,28 +296,85 @@ h3 {
   text-align: end;
 }
 
-input {
-  margin: 20px;
-  width: 150px;
-  height: 30px;
-  transition: all 2s;
+/*FORMULARIO*/
+
+.formulario {
+  font-family: 'Montserrat', sans-serif;
+  width: 300px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-input:focus {
-  width: 200px;
-  font-size: 20px;
+
+.formulario__input, .formulario__label, .formulario__submit {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}  
+
+.formulario__input {
+  padding: 5px;
+  background: rgba(147, 74, 85, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 35px; 
+} 
+
+.formulario__input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.7);
+}  
+
+.formulario__input:focus + .formulario__label {
+  margin-top: -70px;
 }
 
-span {
-  font-size: 24px;
+.formulario__label {
+  padding-right: 210px;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 0;
+  color: black;
+  transition: all 0.2s;
+} 
+
+.formulario__submit{
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
 }
 
-.form {
-  font-family: "Carattere", cursive;
+.fijar {
+  margin-top: -70px;
+}  
+
+/* TOASTIFY estilos error / success */
+.error {
+	background: red !important;
+	color: white !important;
+	font-weight: 600 !important;
 }
 
-.btn {
-  font-size: 10px;
+.success {
+	background: limegreen !important;
+	color: white !important;
+	font-weight: 600 !important;
+}
+
+/*ZONA HORARIA*/
+
+.p__api {
+background: rgba(0, 0, 0, 0.5);
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+width: 400px;
+text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
