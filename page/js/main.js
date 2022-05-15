@@ -21,6 +21,7 @@ function inicio(){
 //lo adherimos al html (manipulacion del Dom)
 function escribirBienvenida(){
     let myH1 = document.createElement("h1");
+    myH1.className="promo";
     myH1.innerHTML = "¡¡Bienvenida a la Reserva de turnos online!!";
     let parentDiv = document.querySelector(".formulario").parentNode;
     let newNodo = document.querySelector(".formulario");
@@ -46,16 +47,16 @@ function mostrarDatos(){
 let nodoformulario= document.querySelector(".formulario");
    nodoformulario.addEventListener("submit", (event)=>{
     event.preventDefault();
-    document.querySelector("#enviar").value="Enviado"
+    document.querySelector("#enviar").value="Enviar";
 });
 
 //Llamamos a una api del forario actual, de manera externa  
 //lo adherimos al html (manipulacion del Dom)
 
-function showHour(container1,container2){
+function showHour(){
     fetch("http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires")
     .then(response => response.json())
-    .then((json) => {mostrarHora(json,container1,container2)})
+    .then((json) => {mostrarHora(json)})
 }
 
 function mostrarHora(obj){

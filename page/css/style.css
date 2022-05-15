@@ -89,11 +89,6 @@ p {
   margin: 0px 0px;
 }
 
-h1 {
-  color: blueviolet;
-  font-family: "Carattere", cursive;
-}
-
 .h1 {
   color: blueviolet;
   font-size: 30px;
@@ -235,10 +230,11 @@ h3 {
 }
 /*PROMOCIONES*/
 .promo {
-  font-size: 60px;
+  font-size: 50px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(to left, violet, black);
   color: white;
+  font-family: "Carattere", cursive;
 }
 
 .boton__border {
@@ -298,6 +294,11 @@ h3 {
 
 /*FORMULARIO*/
 
+.container__formulario{
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+} 
+
 .formulario {
   font-family: 'Montserrat', sans-serif;
   width: 300px;
@@ -321,6 +322,7 @@ h3 {
   background: rgba(147, 74, 85, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 35px; 
+  color: rgba(0, 0, 0, 0.7);
 } 
 
 .formulario__input:focus {
@@ -335,8 +337,7 @@ h3 {
   padding-right: 210px;
   position: absolute;
   margin-top: -40px;
-  z-index: 0;
-  color: black;
+  z-index: -20;
   transition: all 0.2s;
 } 
 
