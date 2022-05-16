@@ -43,6 +43,7 @@ function showHour(){
     .then(response => response.json())
     .then((json) => {mostrarHora(json)})
 }
+console.log(then(response));
 
 function mostrarHora(obj){
     let hora = obj.datetime.slice(11,16);
@@ -50,6 +51,7 @@ function mostrarHora(obj){
     form.insertAdjacentHTML('afterend', `<p class="p__api">Zona horaria: Argentina, Buenos Aires ${hora} hs</p>`);
     
 }
+
 
 //PAG DE TRABAJOS
 //Ventana Modal, al clickear una imagen, se agranda

@@ -28,7 +28,6 @@ function register(event) {
  	// Se visualizara un mensaje en caso correcto del registro
  	showMessage("Registro exitoso", "success");
     event.target.reset();
-	actualizar();
 }
 
 //Se utiliza una funcion de orden superior con el metodo sort para ordenar el array
