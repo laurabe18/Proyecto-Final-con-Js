@@ -9,13 +9,14 @@ function register(event) {
  	const fecha = event.target[2].value;
  	const horario = event.target[3].value;
  	const telefono = event.target[4].value;
-
+ 
     //en caso que uno de los campos no este completo, el formulario se reiniciara y no se enviara
     if(!aNombre || !apellido || !fecha || !horario || !telefono) {
- 	   event.target.reset();
+ 	    event.target.reset();
 		// se presenta un mensaje advirtiendo que hubo un error
  		return showMessage("Hubo un error, intente de nuevo", "error")
  	}
+
     
  	//Cada usuario que ingrese, subira los datos en un  nuevo array
  	let nuevoUsuario = new Usuario(aNombre,apellido,fecha,horario,telefono);
@@ -26,7 +27,8 @@ function register(event) {
  	updateLocalStorage();
  	// Se visualizara un mensaje en caso correcto del registro
  	showMessage("Registro exitoso", "success");
-	event.target.reset();
+    event.target.reset();
+	actualizar();
 }
 
 //Se utiliza una funcion de orden superior con el metodo sort para ordenar el array
@@ -54,4 +56,10 @@ function showMessage(message, type) {
 		className: type,
 	}).showToast();
 }
+
+//Actualizacion de la pag
+let refresh = document.getElementById('refresh');
+refresh.addEventListener('click', _ => {
+    location.reload();
+})
 

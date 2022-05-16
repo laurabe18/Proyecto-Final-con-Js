@@ -1,19 +1,10 @@
-//Ventana Modal, al clickear una imagen, se agranda
 
-document.addEventListener("click",function (e) {
-    if(e.target.classList.contains("galeria-item")){
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('galeria-modal'));
-        myModal.show();
-    }
-});
 
 //Formulario
 //Llamamos a la funcion para permitir iniciar el relleno del formulario
 function inicio(){
     escribirBienvenida();
-    mostrarDatos();
+    obtenerDatos();
     showHour()
 }
 
@@ -31,7 +22,7 @@ function escribirBienvenida(){
 //obtenemos los input para completarlos 
 //le agregamos un eventos dependiendo la condicion que cumpla
 //le damos estilos con css
-function mostrarDatos(){
+function obtenerDatos(){
    let inputs = document.getElementsByClassName("formulario__input");
   for(let i =0; i < inputs.length; i++){  
    inputs[i].addEventListener(`keyup`, function(){
@@ -43,12 +34,6 @@ function mostrarDatos(){
 });
 }
 }
-
-let nodoformulario= document.querySelector(".formulario");
-   nodoformulario.addEventListener("submit", (event)=>{
-    event.preventDefault();
-    document.querySelector("#enviar").value="Enviar";
-});
 
 //Llamamos a una api del forario actual, de manera externa  
 //lo adherimos al html (manipulacion del Dom)
@@ -66,3 +51,16 @@ function mostrarHora(obj){
     
 }
 
+//PAG DE TRABAJOS
+//Ventana Modal, al clickear una imagen, se agranda
+
+// const { reset } = require("nodemon");
+
+document.addEventListener("click",function (e) {
+    if(e.target.classList.contains("galeria-item")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('galeria-modal'));
+        myModal.show();
+    }
+});
